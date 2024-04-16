@@ -4,8 +4,8 @@ public class Game {
 	private int[][] grid;
 	
 	public Game(int newSize) {
-		size = newSize;
-		grid = new int[size][size];
+		this.size = newSize;
+		grid = new int[this.size][this.size];
 	}
 
 	private boolean registerMove(int x, int y, Player player) {
