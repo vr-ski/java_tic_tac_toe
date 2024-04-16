@@ -1,10 +1,11 @@
 public class Game {
 	
 	private int size;
-	private int[size][size] grid;
+	private int[][] grid;
 	
 	public Game(int newSize) {
-		size = newSize
+		size = newSize;
+		grid = new int[size][size];
 	}
 
 	private boolean registerMove(int x, int y, Player player) {
