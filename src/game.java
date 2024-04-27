@@ -1,15 +1,15 @@
 public class Game {
 	
 	private static final int EMPTY = 0;
-	private int size;
-	private int[][] grid;
+	private byte size;
+	private byte[][] grid;
 	
 	public Game(int newSize) {
 		this.size = newSize;
-		grid = new int[this.size][this.size];
+		grid = new byte[this.size][this.size];
 	}
 
-	private boolean registerMove(int x, int y, int player) {
+	private boolean registerMove(byte x, byte y, byte player) {
 		
 		boolean successfulOutcome = false;
 
@@ -22,7 +22,7 @@ public class Game {
 	
 	}
 
-	private boolean confirmWin(int player) {
+	private boolean confirmWin(byte player) {
 		
 		// check if player wins
 		playerWon = false;
@@ -44,7 +44,7 @@ public class Game {
 		return
 	}
 
-	public void playerTurn(int x, int y, int player) {
+	public void playerTurn(byte x, byte y, byte player) {
 		
 		// call private methods
 	
